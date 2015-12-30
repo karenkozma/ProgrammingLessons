@@ -1,5 +1,6 @@
 package org.usfirst.frc.team1360.robot;
 
+import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import org.usfirst.frc.team1360.robot.commands.ExampleCommand;
 
@@ -11,6 +12,6 @@ import org.usfirst.frc.team1360.robot.commands.ExampleCommand;
 public class OI 
 {
     Joystick drive = new Joystick(0);
-    public static float drive_LeftStickX = drive.getAxis(0);
+    double drive_LeftStickX = drive.getRawAxis(0);
 }
 
